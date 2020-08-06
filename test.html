@@ -2,14 +2,104 @@
 <html>
 <head>
 	<title>Briefed</title>
+	<style type="text/css">
+		h1{
+			color: #151515;
+			font-family: inter;
+			font-size: 46px;
+            font-weight: 600;
+            line-height: 110%;
+            padding: 0 0 15px 0;
+		}
+		h2{
+			color: #151515;
+			font-family: inter;
+			font-size: 20px;
+            font-weight: 600;
+            line-height: 110%;
+		}
+		p{
+			font-size: 16px;
+			color: #555555;
+			line-height: 130%;
+			font-family: inter;
+		}
+		a{
+		    font-size: 16px;
+			color: #E64203;
+			font-family: inter;	
+			font-style: bold; 
+			text-decoration: none;
+
+		}
+		a::before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}s
+		a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+		.row{
+			display: flex;
+		}
+		.column{
+			flex: 50%;
+			padding: 50px;
+			width: 90%;
+			padding: 0 0 20px 0;
+		}
+		input[type="text"], input[type=email], input[type="password"], textarea, select {
+			height: 38px;
+			color: #080808;
+			outline: none;
+			border: none;
+			display: block;
+			border-radius: 5px;
+			background: #F2F2F2;
+		}
+		.field input, .field select {
+            font-size: 14px;
+             float: left;
+             padding-left: 16px;
+         }
+         .button{
+         	background-color: #E64203;
+         	border: none;
+         	height: 38px;
+         	outline: none;
+         	border-radius: 5px;
+         	color: #ffffff;
+         	font-weight: 500;
+         	padding-left: 20px;
+         	padding-right: 20px;
+         	font-size: 16px;
+         }
+	</style>
 </head>
 <body>
-	<h1>Get better at UI/UX design with briefs that rock</h1>
+	
+	<div class="row">
+		<div class="column">
+			<h1>Get better at UI/UX design with briefs that rock</h1>
 <p> Get detailed briefs every two weeks in your email. Recieve quality feedback. Improve exponentially faster. </p>
-<a href="https://www.google.com" target="blank"> Learn more > </a>
-<h2> Join our mailing list </h2>
-<input type="email address" name="email">  
-<button> Sign me up!</button>
+<a class="left" href="https://www.google.com" target="blank">Learn more</a>
+		</div>
+		<div class="column">
+			<h2> Join our mailing list </h2>
+<div class="field">
+<input placeholder="Email address" type="text" name="signup[email]" id="signup_email">
+</div>  
+<button class="button"> Sign me up!</button>
+		</div>
+	</div>
 <p> <img src="https://opendoodles.s3-us-west-1.amazonaws.com/sprinting.gif"> </p>
 </body>
 </html>
