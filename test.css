@@ -22,7 +22,7 @@ body{
 			font-size: 46px;
             font-weight: 600;
             line-height: 120%;
-            padding: 0 0 0px 0;
+            padding: 0;
             margin-block-end: 8px;
             margin-block-start:6px;
 		}
@@ -43,7 +43,7 @@ body{
 			font-weight: 400;
 		    font-size: 16px;
 			color: #E64203;
-			font-family: inter;	 
+			font-family: inter;
 			display: inline;
 			position: relative;
 			text-decoration: none;
@@ -83,7 +83,7 @@ body{
 			flex: 50%;
 			max-width: 600px;
 			margin-left: auto;
-			margin-right: auto;	
+			margin-right: auto;
 				}
 		input[type="text"], input[type=email], input[type="password"], textarea, select {
 			height: 38px;
@@ -116,7 +116,7 @@ body{
          .button:hover{
          	background-color: #bf3401;
          }
-         .image{ 
+         .image{
         max-width:40%;
         display: block;
         float: right;
@@ -124,4 +124,3 @@ body{
 
      }
       
-       	
